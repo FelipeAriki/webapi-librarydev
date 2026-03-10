@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="LibraryDev.Application/LibraryDev.Application.csproj" />
+  <Project Path="LibraryDev.Domain/LibraryDev.Domain.csproj" />
+  <Project Path="LibraryDev.Infrastructure/LibraryDev.Infrastructure.csproj" />
+  <Project Path="LibraryDev/LibraryDev.API.csproj" />
+</Solution>

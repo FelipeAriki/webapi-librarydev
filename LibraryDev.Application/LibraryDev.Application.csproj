@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Queries\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LibraryDev.Domain\LibraryDev.Domain.csproj" />
+    <ProjectReference Include="..\LibraryDev.Infrastructure\LibraryDev.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
