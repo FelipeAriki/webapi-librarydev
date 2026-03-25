@@ -23,7 +23,8 @@ public class LivroQueryRepository : ILivroQueryRepository
         using var conn = CreateConnection();
         const string sql = @"
             SELECT Id, Titulo, Descricao, ISBN, Autor, Editora, Genero,
-                   AnoDePublicacao, QuantidadePaginas, DataCriacao, NotaMedia
+                   AnoDePublicacao, QuantidadePaginas, DataCriacao, NotaMedia,
+                   CASE WHEN CapaLivro IS NOT NULL THEN 1 ELSE 0 END AS TemCapa
             FROM Livro
             ORDER BY Titulo";
         return await conn.QueryAsync<Livro>(sql);

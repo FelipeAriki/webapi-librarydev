@@ -110,6 +110,7 @@ namespace LibraryDev.API.Controllers
 
         /// <summary>Retorna a imagem de capa de um livro (PLUS).</summary>
         [HttpGet("{id:int}/capa")]
+        [AllowAnonymous]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<IActionResult> ObterCapa(int id)

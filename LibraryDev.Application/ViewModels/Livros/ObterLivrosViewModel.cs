@@ -15,8 +15,9 @@ public class ObterLivrosViewModel
     public int QuantidadePaginas { get; set; }
     public DateTime DataCriacao { get; set; }
     public decimal NotaMedia { get; set; }
+    public bool TemCapa { get; set; }
 
-    public ObterLivrosViewModel(int id, string titulo, string? descricao, string iSBN, string autor, string editora, string genero, int anoDePublicacao, int quantidadePaginas, DateTime dataCriacao, decimal notaMedia)
+    public ObterLivrosViewModel(int id, string titulo, string? descricao, string iSBN, string autor, string editora, string genero, int anoDePublicacao, int quantidadePaginas, DateTime dataCriacao, decimal notaMedia, bool temCapa)
     {
         Id = id;
         Titulo = titulo;
@@ -29,5 +30,6 @@ public class ObterLivrosViewModel
         QuantidadePaginas = quantidadePaginas;
         DataCriacao = dataCriacao;
         NotaMedia = notaMedia;
+        TemCapa = temCapa;
     }
 }

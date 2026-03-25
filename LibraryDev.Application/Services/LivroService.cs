@@ -39,7 +39,8 @@ public class LivroService : ILivroService
             l.AnoDePublicacao,
             l.QuantidadePaginas,
             l.DataCriacao,
-            l.NotaMedia
+            l.NotaMedia,
+            l.TemCapa
         ));
     }
 
@@ -67,7 +68,10 @@ public class LivroService : ILivroService
                 Id = a.Id,
                 Nota = a.Nota,
                 Descricao = a.Descricao,
+                IdUsuario = a.IdUsuario,
                 NomeUsuario = a.Usuario?.Nome ?? string.Empty,
+                DataInicioLeitura = a.DataInicioLeitura,
+                DataFimLeitura = a.DataFimLeitura,
                 DataCriacao = a.DataCriacao
             }).ToList()
         };
