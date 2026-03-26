@@ -66,6 +66,3 @@ CREATE TABLE dbo.Avaliacao
     CONSTRAINT FK_Avaliacao_Livro FOREIGN KEY (IdLivro) REFERENCES dbo.Livro(Id) ON DELETE CASCADE
 );
 GO
-
--- NotaMedia is calculated and updated by application code (AvaliacaoService)
--- No trigger needed — keeps logic explicit and testable
